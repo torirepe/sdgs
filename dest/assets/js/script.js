@@ -1,6 +1,20 @@
 $(window).load(function(){
+  hm();
   hs();
+  ss();
 });
+
+function hm(){
+  var header = $('#header');
+  var menu = $('#header .menu');
+  var nav = $('#header li a');
+  menu.on('click', function(){
+    header.toggleClass('menuopen');
+  });
+  nav.on('click', function(){
+    header.toggleClass('menuopen');
+  });
+};
 
 function hs(){
   
@@ -46,5 +60,19 @@ function hs(){
       cs();
       scheduleSlider.reloadSlider(config);
     }, 200);
+  });
+};
+
+function ss(){
+  $('a[href^="#"]').click(function(){
+    var speed = 240;
+    var hh = $('#header').innerHeight();
+    var ww = $(window).innerWidth();
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    position = position - hh;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
   });
 };

@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: none;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   overflow-y: scroll;

@@ -71,7 +71,7 @@ $c-blue: #000bc9;
 }
 @mixin fz($px) {
   @include mq(sp) {
-    font-size: $px * 1.4 / 750 * 100 + vw;
+    font-size: $px / 640 * 100 + vw;
   }
   @include mq(tb) {
     font-size: $px + px;
