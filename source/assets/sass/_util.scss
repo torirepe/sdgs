@@ -15,7 +15,8 @@ $breakpoints: (
 //font
 $f-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 $f-serif: "Hiragino Mincho ProN", 游明朝, "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
-$f-prata: "Prata", "Hiragino Mincho ProN", 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+$f-ryumin: "a-otf-ryumin-pr6n", "Hiragino Mincho ProN", 游明朝, "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
+$f-arno: "arno-pro", "Hiragino Mincho ProN", 游明朝, "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
 
 //color
 $c-white: #fff;
@@ -23,6 +24,7 @@ $c-black: #000;
 $c-grey: #999;
 $c-lightgrey: #eee;
 $c-darkgrey: #555;
+$c-blue: #000bc9;
 
 //control
 .sp {
