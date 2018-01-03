@@ -1,0 +1,128 @@
+header {
+  @include mq(st) {
+    .menu {
+      nav {
+        opacity: 0;
+        pointer-events: none;
+        transition: all .24s ease;
+        transform: translate(0,-10px);
+      }
+      > div {
+        > div {
+          transition: all .24s ease;
+        }
+      }
+    }
+    &.menuopen {
+      .menu {
+        cursor: auto !important;
+        > div {
+          > div:nth-child(1) {
+            transform: rotate(28deg) translate(4%,0);
+            transform-origin: left center;
+          }
+          > div:nth-child(2) {
+            transform: translate(10%,0);
+            opacity: 0;
+          }
+          > div:nth-child(3) {
+            transform: rotate(-28deg) translate(4%,0);
+            transform-origin: left center;
+          }
+        }
+        nav {
+          opacity: 1;
+          pointer-events: all;
+          transform: translate(0,0);
+        }
+      }
+    }
+  }
+  @include mq(pc) {
+    .menu {
+      nav {
+        opacity: 0;
+        pointer-events: none;
+        transition: all .24s ease;
+        transform: translate(-10px,0);
+      }
+    }
+    &.menuopen {
+      .menu {
+        cursor: auto !important;
+        nav {
+          opacity: 1;
+          pointer-events: all;
+          transform: translate(0,0);
+        }
+      }
+    }
+  }
+}
+
+[data-ps] {
+  h3 {
+    opacity: 0;
+    transition: all 0s ease 0s;
+    &.right:after {
+      transform: translate(-200%,0);
+      transition: all 0s ease 0s;
+    }
+    &.left:after {
+      @include mq(sp) {
+        transform: translate(-200%,0);
+      }
+      transform: translate(200%,0);
+      transition: all 0s ease 0s;
+    }
+  }
+  .btn {
+    opacity: 0;
+    transition: all 0s ease 0s;
+  }
+  .scroll {
+    opacity: 0;
+    transition: all 0s ease 0s;
+
+  }
+}
+[data-ps='1'] {
+  h3 {
+    transition: all .6s ease;
+    opacity: 1;
+    &:after {
+      transition: all .36s ease .2s !important;
+      transform: translate(0,0) !important;
+    }
+  }
+  .btn {
+    opacity: 1;
+    transition: all .6s ease .2s;
+  }
+  .scroll {
+    opacity: 1;
+    transition: all .6s ease .4s;
+  }
+}
+
+[data-ccs] {
+  [data-ccp] {
+    transition: all .24s ease;
+  }
+}
+[data-ccs="1"] {
+  [data-ccp="1"] {
+    opacity: 1;
+  }
+  [data-ccp="2"] {
+    opacity: 0;
+  }
+}
+[data-ccs="2"] {
+  [data-ccp="1"] {
+    opacity: 0;
+  }
+  [data-ccp="2"] {
+    opacity: 1;
+  }
+}
