@@ -1,25 +1,37 @@
 #header {
+    ul {
+      @include mq(st) {
+        opacity: 0;
+        transition: all .24s ease;
+        pointer-events: none;
+      }
+    }
     .menu {
         > div {
             transition: .24s all ease;
+            transform-origin: left center;
         }
     }
     &.menuopen {
         ul {
             @include mq(st) {
-                display: block !important;
+              opacity: 1;
+              pointer-events: all;
             }
         }
         .menu {
             > div {
+              
                 &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
+                  transform: rotate(41deg);
+                  margin-left: 4%;
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:nth-child(3) {
-                    transform: rotate(-45deg) translate(5px, -5px);
+                  transform: rotate(-41deg);
+                  margin-left: 4%;
                 }
             }
         }

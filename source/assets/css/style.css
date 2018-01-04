@@ -83,6 +83,24 @@ html
     font-size: 10px;
 }
 
+::-moz-selection
+{
+    color: #fff; 
+    background: #323cfb;
+}
+
+::selection
+{
+    color: #fff; 
+    background: #323cfb;
+}
+
+::-moz-selection
+{
+    color: #fff; 
+    background: #323cfb;
+}
+
 *
 {
     -webkit-box-sizing: border-box;
@@ -385,9 +403,7 @@ time
         top: 100%;
         left: 0;
 
-        display: none; 
-
-        width: 100%;
+        width: 100%; 
 
         background-color: #aaa;
     }
@@ -476,7 +492,23 @@ time
     }
     #header .l_inner ul li a:hover
     {
+        font-weight: bold;
+
         color: #000bc9;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #header .l_inner .facebook
+    {
+        display: none;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    #header .l_inner .facebook
+    {
+        margin-right: 28px;
     }
 }
 @media screen and (max-width: 768px)
@@ -669,6 +701,28 @@ time
         left: -284px;
 
         width: 1800px;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    #main .hero .l_inner .facebook
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px)
+{
+    #main .hero .l_inner .facebook
+    {
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        right: 4.7%;
+
+        width: 6%;
+        margin-top: 52%;
+
+        background-color: #fff;
     }
 }
 #main .hero .l_inner .text
@@ -1039,15 +1093,13 @@ time
 }
 #main .message .l_block_02
 {
-    background: url(../images/message_block_02_bg.jpg) no-repeat center center;
+    background: url(../images/message_block_02_bg.jpg) no-repeat center center/cover;
 }
 @media screen and (max-width: 768px)
 {
     #main .message .l_block_02
     {
         padding: 0 4.7% 10.9%;
-
-        background-size: cover !important;
     }
 }
 @media screen and (min-width: 769px)
@@ -1130,7 +1182,7 @@ time
 {
     #main .message .l_block_02 .p_04
     {
-        padding-top: 86px;
+        padding-top: 36px;
     }
 }
 #main .message .l_block_03
@@ -1818,9 +1870,9 @@ time
 #main .profile .l_box_02 .p_01
 {
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 2;
 
-    margin-top: 72px;
+    margin-top: 46px;
 
     text-align: justify;
 }
@@ -3175,6 +3227,30 @@ time
     }
 }
 
+#pagetop
+{
+    position: fixed;
+    z-index: 11;
+    right: 6%;
+    bottom: 12%;
+
+    -webkit-transition: .24s all ease;
+            transition: .24s all ease; 
+
+    background-color: rgba(255, 255, 255, .6);
+}
+#pagetop:hover
+{
+    opacity: .6;
+}
+@media screen and (max-width: 768px)
+{
+    #pagetop
+    {
+        display: none;
+    }
+}
+
 #footer
 {
     line-height: 1; 
@@ -3232,25 +3308,44 @@ time
 
 /* /unique */
 /* animation */
+@media screen and (max-width: 768px)
+{
+    #header ul
+    {
+        -webkit-transition: all .24s ease;
+                transition: all .24s ease;
+        pointer-events: none; 
+
+        opacity: 0;
+    }
+}
+
 #header .menu > div
 {
     -webkit-transition: .24s all ease;
             transition: .24s all ease;
+    -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+            transform-origin: left center;
 }
 
 @media screen and (max-width: 768px)
 {
     #header.menuopen ul
     {
-        display: block !important;
+        pointer-events: all; 
+
+        opacity: 1;
     }
 }
 
 #header.menuopen .menu > div:nth-child(1)
 {
-    -webkit-transform: rotate(45deg) translate(5px, 5px);
-        -ms-transform: rotate(45deg) translate(5px, 5px);
-            transform: rotate(45deg) translate(5px, 5px);
+    margin-left: 4%; 
+
+    -webkit-transform: rotate(41deg);
+        -ms-transform: rotate(41deg);
+            transform: rotate(41deg);
 }
 
 #header.menuopen .menu > div:nth-child(2)
@@ -3260,9 +3355,11 @@ time
 
 #header.menuopen .menu > div:nth-child(3)
 {
-    -webkit-transform: rotate(-45deg) translate(5px, -5px);
-        -ms-transform: rotate(-45deg) translate(5px, -5px);
-            transform: rotate(-45deg) translate(5px, -5px);
+    margin-left: 4%; 
+
+    -webkit-transform: rotate(-41deg);
+        -ms-transform: rotate(-41deg);
+            transform: rotate(-41deg);
 }
 
 /* /animation */

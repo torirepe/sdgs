@@ -12,25 +12,25 @@
     <title>朝活SDGsセミナー</title>
 
     <!--  favicons -->
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicons/favicon.ico">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-160x160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-196x196.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-196x196.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="manifest" href="favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#2d88ef">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <!-- /favicons -->
@@ -77,6 +77,9 @@
                 <li><a href="#schedule">スケジュール</a></li>
                 <li><a href="#contact">お問合せ</a></li>
             </ul>
+          <div class="facebook">
+            <a target="_blank" href="https://www.facebook.com/SDG-Partners-Inc-327219607689426/"><img src="assets/images/icon_facebook.png" alt="facebook"></a>
+          </div>
             <div class="form"><a href="#form"><img src="assets/images/icon_document.svg" alt="">お申し込み</a></div>
             <div class="menu st">
                 <div>&nbsp;</div>
@@ -95,6 +98,7 @@
                       <img src="assets/images/hero_figure_01-st.jpg" alt="講師 田瀬 和夫">
                     </picture>
                 </figure>
+                <div class="facebook"><a target="_blank" href="https://www.facebook.com/SDG-Partners-Inc-327219607689426/"><img src="assets/images/icon_facebook-sp.png" alt=""></a></div>
                 <div class="text">
                     <h1>
                         <picture>
@@ -185,7 +189,13 @@
             <div id="scheduleSlider">
                 <ul>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_01.png" alt="カレンダー"></figure>
+                        <figure>
+                          <picture>
+                            <source media="(max-width:768px)" srcset="assets/images/schedule_slider_01-sp.png">
+                            <source media="(min-width:769px)" srcset="assets/images/schedule_slider_01.png">
+                            <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                          </picture>
+                        </figure>
                         <div class="box">
                             <h4 class="active"><div>第1回</div><div>1月19日（金）</div></h4>
                             <h5>2018年1月時点でのSDGs概観</h5>
@@ -193,7 +203,13 @@
                         </div>
                     </li>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_02.png" alt="カレンダー"></figure>
+                      <figure>
+                        <picture>
+                          <source media="(max-width:768px)" srcset="assets/images/schedule_slider_02-sp.png">
+                          <source media="(min-width:769px)" srcset="assets/images/schedule_slider_02.png">
+                          <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                        </picture>
+                      </figure>
                         <div class="box">
                             <h4><div>第2回</div><div>2月9日（金）</div></h4>
                             <h5>SDGsとESG投資</h5>
@@ -206,7 +222,13 @@
                         </div>
                     </li>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_03.png" alt="カレンダー"></figure>
+                      <figure>
+                        <picture>
+                          <source media="(max-width:768px)" srcset="assets/images/schedule_slider_03-sp.png">
+                          <source media="(min-width:769px)" srcset="assets/images/schedule_slider_03.png">
+                          <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                        </picture>
+                      </figure>
                         <div class="box">
                             <h4><div>第4回</div><div>3月16日（金）</div></h4>
                             <h5>ビジネスと人権 (1)</h5>
@@ -219,7 +241,13 @@
                         </div>
                     </li>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_04.png" alt="カレンダー"></figure>
+                      <figure>
+                        <picture>
+                          <source media="(max-width:768px)" srcset="assets/images/schedule_slider_04-sp.png">
+                          <source media="(min-width:769px)" srcset="assets/images/schedule_slider_04.png">
+                          <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                        </picture>
+                      </figure>
                         <div class="box">
                             <h4><div>第6回</div><div>4月13日（金）</div></h4>
                             <h5>誰一人取り残さない：インクルーシブ・ビジネスのあるべき方向性</h5>
@@ -232,7 +260,13 @@
                         </div>
                     </li>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_05.png" alt="カレンダー"></figure>
+                      <figure>
+                        <picture>
+                          <source media="(max-width:768px)" srcset="assets/images/schedule_slider_05-sp.png">
+                          <source media="(min-width:769px)" srcset="assets/images/schedule_slider_05.png">
+                          <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                        </picture>
+                      </figure>
                         <div class="box">
                             <h4><div>第8回</div><div>5月11日（金）</div></h4>
                             <h5>SDGsとグローバル官民連携</h5>
@@ -245,7 +279,13 @@
                         </div>
                     </li>
                     <li>
-                        <figure><img src="assets/images/schedule_slider_06.png" alt="カレンダー"></figure>
+                      <figure>
+                        <picture>
+                          <source media="(max-width:768px)" srcset="assets/images/schedule_slider_06-sp.png">
+                          <source media="(min-width:769px)" srcset="assets/images/schedule_slider_06.png">
+                          <img src="assets/images/schedule_slider_01-sp.png" alt="カレンダー">
+                        </picture>
+                      </figure>
                         <div class="box">
                             <h4><div>第10回</div><div>6月29日（金）</div></h4>
                             <h5>SDGsの先にある幸福追求型経営</h5>
@@ -291,11 +331,11 @@
             <h3 class="h3_01">Contact<i>セミナー・サイトに関するお問い合わせはこちら</i></h3>
             <p class="p_01">セミナー・サイトに関するお問い合わせはこちら</p>
             <ul class="ul_01">
-                <li>SDGパートナーズ有限会社<a href=""><img src="assets/images/icon_facebook.png" alt=""></a></li>
-                <li>〒101-0021 東京都千代田区外神田2丁目17番6号</li>
+              <li>SDGパートナーズ有限会社<a target="_blank" href="https://www.facebook.com/SDG-Partners-Inc-327219607689426/"><img src="assets/images/icon_facebook.png" alt=""></a></li>
+              <li>〒101-0051 東京都千代田区神田神保町2丁目12番3号</li>
                 <li>ブランドマーケティング部　牧口 奏江</li>
             </ul>
-            <div class="div_01"><a href=""><img src="assets/images/icon_mail.png" alt="mail">お問い合わせ</a></div>
+            <div class="div_01"><a href="mailto:kanae.makiguchi@sdgpartners.jp"><img src="assets/images/icon_mail.png" alt="mail">お問い合わせ</a></div>
             <div class="facebook">
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
@@ -309,6 +349,7 @@
             </div>
         </section>
     </main>
+    <div id="pagetop"><a href="#"><img src="assets/images/pagetop.png" alt="↑"></a></div>
     <footer id="footer">
         <p><small>Copyright © 2017 SDG Partners Inc. All Right Reserved.</small></p>
     </footer>

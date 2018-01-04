@@ -36,7 +36,6 @@
                 left: 0;
                 background-color: #aaa;
                 width: 100%;
-                display: none;
             }
             @include mq(pc) {
                 display: flex;
@@ -67,11 +66,20 @@
                         padding: 1em 0;
                         transition: .24s all ease;
                         &:hover {
+                            font-weight: bold;
                             color: $c-blue;
                         }
                     }
                 }
             }
+        }
+        .facebook {
+          @include mq(st) {
+            display: none;
+          }
+          @include mq(pc) {
+            margin-right: 28px;
+          }
         }
         .form {
             @include mq(st) {
@@ -163,6 +171,20 @@
                     width: 1800px;
                 }
             }
+          .facebook {
+            @include mq(pc) {
+              display: none;
+            }
+            @include mq(sp) {
+              position: absolute;
+              top: 0;
+              right: 4.7%;
+              width: 6%;
+              margin-top: 52%;
+              z-index: 9;
+              background-color: #fff;
+            }
+          }
             .text {
                 position: relative;
                 z-index: 2;
@@ -311,10 +333,9 @@
             }
         }
         .l_block_02 {
-            background: url(../images/message_block_02_bg.jpg) no-repeat center center;
+            background: url(../images/message_block_02_bg.jpg) no-repeat center center / cover;
             @include mq(st) {
                 padding: 0 4.7% 10.9%;
-                background-size: cover !important;
             }
             @include mq(pc) {
                 height: 338px;
@@ -346,7 +367,7 @@
                     padding-top: 5.4%;
                 }
                 @include mq(pc) {
-                    padding-top: 86px;
+                    padding-top: 36px;
                 }
             }
         }
@@ -641,9 +662,9 @@
                 }
             }
             .p_01 {
-                margin-top: 72px;
                 font-size: 12px;
-                line-height: 1.8;
+                line-height: 2;
+                margin-top: 46px;
                 text-align: justify;
                 @include mq(st) {
                     display: none;
@@ -1214,6 +1235,21 @@
             }
         }
     }
+}
+
+#pagetop {
+  position: fixed;
+  right: 6%;
+  bottom: 12%;
+  z-index: 11;
+  background-color: rgba(255,255,255,.6);
+  transition: .24s all ease;
+  &:hover {
+    opacity: .6;
+  }
+  @include mq(st) {
+    display: none;
+  }
 }
 
 #footer {
