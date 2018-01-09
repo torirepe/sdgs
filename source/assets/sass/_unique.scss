@@ -1248,7 +1248,13 @@
     opacity: .6;
   }
   @include mq(st) {
-    display: none;
+    position: fixed;
+    right: 6%;
+    bottom: 6;
+    z-index: 11;
+    background-color: rgba(255,255,255,.6);
+    transition: .24s all ease;
+    width: 10.9%;
   }
 }
 

@@ -3247,7 +3247,17 @@ time
 {
     #pagetop
     {
-        display: none;
+        position: fixed;
+        z-index: 11;
+        right: 6%;
+        bottom: 6;
+
+        width: 10.9%; 
+
+        -webkit-transition: .24s all ease;
+                transition: .24s all ease;
+
+        background-color: rgba(255, 255, 255, .6);
     }
 }
 
